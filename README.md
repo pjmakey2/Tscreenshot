@@ -7,18 +7,18 @@ This project captures a screenshot from your Windows system and uploads it to an
 
 Make sure you have Python installed. You can download it from the [official Python website](https://www.python.org).
 
+- This project was built against Python 3.12.4.
+
+
 ## Installation
 
 1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/yourusername/screenshot-to-sftp.git
-    cd screenshot-to-sftp
+    ```git clone git@github.com:pjmakey2/Tscreenshot.git
+    cd Tscreenshot
     ```
 
 2. **Install required libraries**:
-    ```bash
-    pip install pillow pysftp
-    ```
+    ```pip install pillow pysftp```
 
 ## Configuration
 
@@ -27,12 +27,13 @@ Make sure you have Python installed. You can download it from the [official Pyth
 Create a `settings.py` file in the project directory and specify your SFTP server details:
 
 ```python
-# settings.py
-
-SFTP_HOSTNAME = 'your_sftp_server.com'
-SFTP_USERNAME = 'your_username'
-SFTP_PASSWORD = 'your_password'
-REMOTE_PATH = '/remote/path/screenshot.png'
+    # settings.py
+    SFTP_USER = 'loquillo_sftp'
+    SFTP_PASSWORD = 'SniffPicture'
+    SFTP_HOST = '127.128.129.130'
+    SFTP_PORT = '1238'
+    TV_ID = 'vvtv'
+    SFTP_REMOTE_PATH = f'/path/{TV_ID}/'
 
 ```
 
